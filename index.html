@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneTab - Home</title>
+    <style>
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    
+    
+    
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    height: 220px;
+   
+   
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffdb4d;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+#l{
+    width: 100px;
+    height: 120px;
+    padding-top: 20px;
+}
+#heading{
+    font-size: 35px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#body{
+
+   width: 100%;
+font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    
+    
+    
+    
+}
+
+.slider {
+    position: relative;
+    max-width: 1600px;
+    width: 200%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    
+   
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide {
+    
+min-width: 100%;
+    box-sizing: border-box;
+    
+    
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+#homediv{
+    width: 500px;
+    height: 520px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+      font-size: 18px;
+      display: block;
+      display: inline-block;
+      
+      position: relative;
+      left: 400px;
+    
+}
+#homediv1{
+    width: 500px;
+    height: 520px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 17px;
+      display: block;
+      display: inline-block;
+      position: relative;
+      left: 40px;
+  
+
+}
+#hp{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    width: 1000px;
+    height: 10px;
+    background-color: #fff;
+}
+#mainhome{
+    background-color: antiquewhite;
+    
+}
+#erpi{
+    padding-top: 100px;
+    
+    
+}
+#erp2{
+    padding-left: 300px;
+}
+#aboutp{
+    width: 1500px;
+    height: 10px;
+    display: block;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       padding-top: 30px;
+       padding-left: 20px;
+       letter-spacing: 1px;
+       
+}
+#about{
+      background-color: lightcyan;
+}
+#aboutn{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1500px;
+    height: 70px;
+    color: white;
+    background-color: #333;
+     
+}
+#abouti{
+     position: relative;
+     left: 900px;
+     bottom: 600px;
+}
+#about2{
+    width: 500px;
+    height: 400px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#ph{
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    background-color: #333;
+    color: #f3f3f3;
+}
+#products{
+    width: 100%;
+    height: 4000px;
+    background-color:lightblue;
+     
+}
+#ca{
+    width: 1000px;
+    height: 900px;
+    display: block;
+    position: relative;
+    left: 300px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ct{
+    width: 1000px;
+    height: 2000px;
+    display: block;
+  
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#cs{
+    width: 1000px;
+    height: 2000px;
+    display: block;
+    
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#ds{
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    position: relative;
+    bottom: 1000px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#dp{
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    position: relative;
+    bottom: 1200px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ch{
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    position: relative;
+    bottom: 1500px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#h{
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: #ffcc00;
+}
+#s{
+    position: relative;
+    bottom: 2200px;
+
+}
+#con{
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    
+     text-align: center;
+}
+#hc{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    background-color: #333;
+    color: white;
+    
+}
+.a{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+#s1{
+    width: 100px;
+    height: 30px;
+
+}
+.sm{
+    width: 400px;
+    height: 100px;
+}
+#contact{
+     background-color: lightcoral;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        
+        <nav class="navbar">
+            
+            
+            <h1 id="heading"> <p style="color: green;">Wel Come To</p>CloneTab Soft Solutions private Limited</h1>
+            <div class="container">
+                 
+                <img id="l" src="https://media.licdn.com/dms/image/C560BAQEh7onuV9tRgA/company-logo_200_200/0/1649034469503/clonetab_inc__logo?e=2147483647&v=beta&t=yVphr04ghnlFY9L-0lNnvXLPG87o9SzndpD8aH8ZFzI"></img>CloneTab
+                <ul class="nav-menu">
+                   <li> <a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+
+        
+        <section  id="home">
+            <div id="body">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="https://www.clonetab.com/admin/images/slider/solutionsFor.png"  alt="Image 1"></div>
+                        <div class="slide"><img src="https://www.clonetab.com/admin/images/slider/virtualizations.png" alt="Image 2"></div>
+                        <div class="slide"><img src="https://www.clonetab.com/admin/images/slider/oracleEbs.png" alt="Image 3"></div>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                </div>
+               
+                <div id="mainhome">
+               <p id="hp">The Clonetab Virtualization and Cloning platform helps rapid test data delivery for ERPs and Databases</p>
+               <div id="erpi"> <img src="http://clonetab.com/img/erp1.jpeg"></img>
+                <img src="http://clonetab.com/img/clone-tab3.jpeg" id="erp2"></img>
+            </div>
+            <p id="homediv1">Cloning Automation<br>
+                It doesn't stop at adcfgclone.pl for EBS, it goes much further
+                Clonetab’s ERP cloning does not stop at Database Cloning or at adcfgclone.pl (EBS). It goes much beyond this and can be a true end-to-end cloning solution. As an example, in case of Oracle e-Business Suite, the cloning includes performing post clone steps like retention of profile options, changing apps, Weblogic, sysadmin or EBS schema passwords (like GL, AP, XX* schemas), etc.
+                
+                Clonetab is the ERP application aware cloning and virtualization software in the market.
+                It has in-depth understanding of the Oracle EBS, Oracle PeopleSoft, SAP technology stack. Oracle EBS cloning steps can significantly change based on the patchset levels (like TXK & AD). These differences due to patchset levels are fed to the engine as and when there is a new patchset, and cloning is performed according to the patchset level. This makes Clonetab software unique and the only software of its kind in the market.</p>
+                <div id="homediv">
+                    
+                    
+                    <p><h3>For ERPs like Oracle e-Business Suite, PeopleSoft & Databases</h3>
+                        Clonetab is the only software which can virtualize and provide true end-to-end on-demand clones of ERPs (like Oracle e-Business Suite, PeopleSoft) or databases.
+                         It can also provide an integrated solution for virtualization, cloning, Disaster Recovery, Backups and Oracle EBS Snapshots.</p>
+                         <hr>
+                         <p><h3>Clonetab engines – Deeply aware of ERP Applications, not just Databases</h3>
+                            The engines are deeply EBS & PS aware and can identify the major releases (e.g. R12.1, R12.2) and patchset levels like AD, TXK and executes the clone commands accordingly. The platform provides options to retain EBS/PS specific options like profile option retention, Concurrent/Process scheduler setups retention, EBS users with responsibilities retention, Database links, Directories retention, workflows setups and many more options, resulting in a true end-to-end ERP clone.</p>
+                           
+               </div>
+                </div>
+                
+                <script>
+                    let slideIndex = 0;
+            
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.slide');
+                if (index >= slides.length) {
+                    slideIndex = 0;
+                }
+                if (index < 0) {
+                    slideIndex = slides.length - 1;
+                }
+                slides.forEach((slide, i) => {
+                    slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+                });
+            }
+            
+            function nextSlide() {
+                showSlide(slideIndex += 1);
+            }
+            
+            function prevSlide() {
+                showSlide(slideIndex -= 1);
+            }
+            
+            // Initialize the slider
+            showSlide(slideIndex);
+            
+            // Optional: Auto-slide every 3 seconds
+            setInterval(() => {
+                nextSlide();
+            }, 2000);
+            
+                </script>
+            
+        </section>
+ <hr>
+ 
+ <section  id="about">
+    
+   <div id="aboutn"><h1>About Us</h1></div>
+   
+ <div id="aboutp">
+    
+    <p >Clonetab is a software appliance for cloning automation & virtualization of Oracle e-Business Suite, PeopleSoft and Databases such as Oracle, MySQL, Hana, SQL Server and so on. The company was created with the ambition of providing an innovative product to companies to increase profitability and productivity while minimizing the time and money spent on manual, monotonous cloning of software. In essence, Clonetab serves the role of multiple employees, making it more efficient to companies who can save on unnecessary costs. 
+
+        Built on the Java Platform, Clonetab’s secure cloning software offers advantageous speedy solutions to all its customers. Among other things, Database Administrators (DBAs), spend considerable amount of time on tasks such as refreshes, patching, and start and stop operations of various instances, which tend to be complex, tedious processes. Should potential businesses choose to make use of this software, it will allow for them to utilize their DBAs for other valuable tasks. 
+        
+        Through Clonetab, customers are entitled to many benefits which include, but are not limited to: customizations to the refresh procedures to automate and tune them; 24/7 Remote DBA Services; and installation, configuration, implementation, and support services for Clonetab. Other valuable features include a Netapp storage module that allows for more economical and quicker refreshes and other related tasks; a user-friendly graphical user interface (GUI), role-based access to DBA and Unix System administrations; and a password wallet to safeguard confidential information. 
+        
+        Several fortune 500 companies across the globe use Clonetab products in the areas of ERP cloning/Virtualization, Database cloning/virtualization, DR, Data Scrambling, SQL Self Service, ERP Backup, Database Backup and so on.</p>
+        
+ </div>
+ <div>
+    <p id="about2"><h2>Clonetab virtualization and cloning platform helped many Fortune 500 enterprises to reduce infrastructure costs and improve productivity.</h2>
+        ERP Cloning automation, Virtualization, backup and recovery solutions, Data scrambling solutions, SQL Self Service like productivity tools helped many top world brands to improve productivity across their IT teams.
+        
+        Some of the top management consulting, Biotech companies, Governments etc. leveraged Clonetab platform’s capabilities to reduce Cloning and post cloning steps from about 21 days to under 1.5 hrs. This enabled rapid turnaround times for provisioning test data copies of near production including application portion in less than 1.5 hrs (as compared to multi weeks).
+    Only application aware platform that can operate on multi-cloud/on-prem and deliver rapid test data copies
+Unlike shell scripts of other virtualization vendors, Clonetab platform delivers true end-to-end cloning of ERPs powered by data virtualization. Integrated Data scrambling, post clone steps eliminates the need for manual DBA intervention, making it a true ERP Cloning platform.
+    </p>
+   </div>
+        
+ </section>
+ 
+ 
+ <section id="products">
+    <div id="ph"><h1>Products</h1></div>
+    
+   <div id="ca">
+    <h3 id="h">Cloning Automation</h3>
+   
+        It doesn't stop at adcfgclone.pl for EBS, it goes much further
+        Clonetab’s ERP cloning does not stop at Database Cloning or at adcfgclone.pl (EBS). It goes much beyond this and can be a true end-to-end cloning solution. As an example, in case of Oracle e-Business Suite, the cloning includes performing post clone steps like retention of profile options, changing apps, Weblogic, sysadmin or EBS schema passwords (like GL, AP, XX* schemas), etc.
+        
+        Clonetab is the ERP application aware cloning and virtualization software in the market.
+         It has in-depth understanding of the Oracle EBS, Oracle PeopleSoft, SAP technology stack. Oracle EBS cloning steps can significantly change based on the patchset levels (like TXK & AD). These differences due to patchset levels are fed to the engine as and when there is a new patchset, and cloning is performed according to the patchset level. This makes Clonetab software unique and the only 
+         <img src="https://clonetab.com/img/clone-tab3.jpeg"></img>
+   </dvi>
+
+   <div id="h">Ctclone</div>
+
+   <div id="ct">
+   Rapid and automated application + Database provisioning for CI/CD
+Packaged Applications: SAP, Oracle e-Business Suite, PeopleSoft
+Databases: Oracle, MySQL, MSSQL, HANA
+
+ERP Cloning automation, Virtualization, backup and recovery solutions, Data scrambling solutions, SQL Self Service like productivity tools helped many top world brands to improve efficiency and reduce operational costs across their IT teams
+
+<img src="https://www.clonetab.com/img/icon/b2.jpg"></img>
+<div id="h">CTSnap</div>
+    <div id="cs">
+        <h2>Deeply Application-aware snapshots</h2>
+CTSnap is aware of internals of Oracle EBS, Snapshots includes EBS appl_top and other binaries, preserves the apps and other passwords at that specific point in time etc. App/DB consistent snapshots eliminates any disconnects between appl_top and database during backups due to time difference.
+Travel to any snapshot in any incarnation
+Multiple levels of snapshot incarnation can be created. Travel from any level to any level with few clicks. During any major change, take a CTSnap in minutes, if the change fails, travel back to the snapshot (revert), in minutes.
+
+CTSnaps are ERP application-aware. Snapshots include both application and database. For applications like Oracle EBS, just reverting database snapshot will disconnect application from DB. CTSnap includes both Database and application in the snapshot. Reverting to that snap will revert the whole application and not just the database.
+    </div>
+   </div>
+
+   
+   <div id="ds">
+    <div id="h">Data Scrambling </div>
+    <h2>Clonetab Advanced-Data Scrambling (ADS)</h2>
+⦁ For Oracle e-Business Suite & Database
+⦁ Data Scrambling for SAP S/4HANA for SAP BTP or on-Premise
+⦁ Multiple algorithms for different needs
+⦁ Integrated with cloning or standalone.
+⦁ With Compliance Manager role
+⦁ High-speed scrambling
+
+Millions of rows scrambled in minutes
+Compliance while performing refreshes and compliance while bringing sensitive data from production to target can be controlled using Clonetab. The features like password encryption, data scrambling, password masking in logs make Clonetab deliver secure and compliant refreshes which 
+<img src="https://www.clonetab.com/img/icon/ctds1.jpg"></img>
+   </div>
+    
+    <div id="dp">
+        <div id="h">Data Protection</div>
+        Compared to legacy backups, ctclone Integrated Data Protection Platform (IDPP) efficiently delivers data protection, Business Continuity & cloning with a single backup load on the source database.
+
+The combination of Incremental forever and thin-provisioned snapshots drastically reduces the time taken for backups and restores. Clonetab’s IDPP is a low TCO solution addressing 4 important aspects of data as below.
+Local backups and optional copies of backups to cloud storage (e.g. AWS S3) serve as data protection. Compared to legacy backups, these modern methods of data protection are cost-effective, reliable and, easy to manage.
+<img src="https://www.clonetab.com/img/icon/b3.jpg"></img>
+    </div>
+    <div id="ch">
+        <div id="h">CloneHub</div>
+        Tight Integration with Oracle Exadata
+Supports Infiniband or 100Gb/Second Ethernet
+
+⦁ Multiple 25Gb Ethernet ports offer extreme parallel performance for data access and protection
+⦁ Low Latency, High Bandwidth, Low CPU system
+⦁ Tight integration with Engineered system through supported High-performance 100Gb/second Ethernet for data access and protection
+⦁ Options to use Exadata storage and still acheive high speed cloning (e.g. EBS clone time ~2hrs)
+EBS Cloning Automation & Virtualization
+For engineered systems, this is a unique cloning solution with snapshot clone capability. Customers can quickly and easily provision database and application copies to support an assortment of business needs which includes cloning, post cloning steps, and cloning customizations.
+    </div>
+    <div id="s">
+    <div>  <h1 id="h">Solutions</h1></div>
+    <h3>ERP & Database Virtualization</h3>
+    <h3>ERP Cloning Automation</h3>
+    <h3>oracle EBS Snapshots</h3>
+    <h3>Data protection</h3>
+    <h3>Productivity tools</h3>
+    <div></div>
+    
+ </section>
+
+   
+
+    <section id="contact">
+        <div id="hc">Contact Us</div>
+        <br><br>
+        
+        <div id="con">
+            <label>Full Name</label>
+            <input type="text" class="a">
+            <br><br>
+            <label>Email</label>
+            <input type="email" class="a">
+            <br><br>
+            <label>Send Message</label>
+            <input type="text" class="sm">
+            <br><br>
+            <input type="submit" value="Send" id="s1">
+        </div>
+        <h4> Email:info@Clonetab.com</h4>
+        <br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7648.341050984911!2d80.54088939096752!3d16.567922036744402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35ee82f53aaaab%3A0x2a1b329793208879!2sClonetab%20SoftSolutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1717941866648!5m2!1sen!2sin" width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2019 CloneTab. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
